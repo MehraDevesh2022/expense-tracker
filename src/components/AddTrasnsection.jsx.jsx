@@ -1,6 +1,9 @@
 import React from 'react'
 
 function AddTransection() {
+  
+  
+  
   return (
     <>
       <h3>Add new transaction</h3>
