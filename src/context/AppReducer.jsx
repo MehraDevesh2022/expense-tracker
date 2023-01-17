@@ -8,7 +8,7 @@ export default (state , action) =>{
         case  'Delete_Transection'  :
             return{
                 ...state,
-                transection : state.transection.filter(obj => obj.id != action.payLoad)
+              transection : state.transection.filter(obj => obj.id != action.payLoad)
             } 
        default :
        return state;
