@@ -1,38 +1,219 @@
-.App {
-  text-align: center;
+:root {
+  --box-shadow: 0 1px 3px rgba(35, 2, 2, 0.731), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #98abb04b ;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+.main{
+  background-color: #a812d9;
+  width: 470px;
+height: 95vh;
+border-radius: 5px;
+color: white;
+ text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  
 }
 
-.App-link {
-  color: #61dafb;
+.main-container {
+  margin: 30px auto;
+  width: 350px;
+}
+.header{
+  text-align: center;
+padding-top: 10px;
+   text-shadow: 
+      -1px -1px 1px #efede3, 
+      0px 1px 0 #a812d9, 
+      0px 2px 0 #a812d9, 
+      0px 3px 0 #a812d9, 
+      0px 4px 0 #a812d9, 
+      0px 5px 0 #a812d9, 
+      0px 6px 0 #120816, 
+      0px 7px 0 #222, 
+      0px 8px 0 #202020, 
+      0px 9px 0 #1e1e1e, 
+      0px 10px 0 #1c1c1c, 
+      0px 11px 0 #1a1a1a, 
+      0px 12px 0 #181818, 
+      0px 13px 0 #151313, 
+      0px 14px 0 #141414, 
+      0px 15px 0 #181717,
+      2px 20px 5px rgba(179, 9, 218, 0.9),
+      5px 23px 5px rgba(180, 13, 213, 0.862),
+      8px 27px 8px rgba(147, 10, 206, 0.5),
+      8px 28px 35px rgba(253, 244, 244, 0.9);
+
+
+}
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+  text-shadow: 
+      -1px -1px 1px #efede3, 
+      0px 1px 0 #a812d9, 
+      0px 2px 0 #a812d9, 
+      0px 3px 0 #a812d9, 
+      0px 4px 0 #a812d9, 
+      0px 5px 0 #a812d9, 
+      0px 6px 0 #120816, 
+      0px 7px 0 #222, 
+      0px 8px 0 #202020, 
+      0px 9px 0 #1e1e1e, 
+      0px 10px 0 #1c1c1c, 
+      0px 11px 0 #1a1a1a, 
+      0px 12px 0 #181818, 
+      0px 13px 0 #151313, 
+      0px 14px 0 #141414, 
+      0px 15px 0 #181717,
+      2px 20px 5px rgba(179, 9, 218, 0.9),
+      5px 23px 5px rgba(180, 13, 213, 0.862),
+      8px 27px 8px rgba(147, 10, 206, 0.5),
+      8px 28px 35px rgba(253, 244, 244, 0.9);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+  text-shadow: 1px 1px 2px rgb(19, 9, 11);
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  
+}
+
+.inc-exp-container {
+  background-color: rgba(9, 162, 162, 0.109);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+   /* margin: auto; */
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: #c0392b;
+  
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #04555b5f;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  width: 100%;
+  
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+   
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 300px;
   }
 }
