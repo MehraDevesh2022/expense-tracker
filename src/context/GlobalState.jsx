@@ -26,10 +26,11 @@ export function GlobalContextProvider(props){
    }
 
    function addTrasnsection(transection){
-          dispatch({
-            type: "Add_Trasnsection",
-            payLoad : transection
-          });
+       
+    dispatch({
+      type: "Add_Transection",
+      payLoad: transection,
+    });
    }
 
     return(
