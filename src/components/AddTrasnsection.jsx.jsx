@@ -2,14 +2,14 @@ import React ,{useState , useContext} from 'react'
 import { GlobalContext } from '../context/GlobalState';
 
 function AddTransection() {
-const { transection, addTrasnsection } = useContext(GlobalContext);
+const {  addTrasnsection } = useContext(GlobalContext);
 const [text , setText] = useState('');
 const [amount , setAmount] = useState(0);
 
     
 function handleSubmit(e){
   e.preventDefault();
-  if(amount ==0 || text == ''){
+  if(amount ===0 || text === ''){
     return
   } 
   
